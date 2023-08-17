@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whats The Weather?</title>
+    <script src="https://kit.fontawesome.com/655dd4ab40.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+<body onload="getSearches()"> 
+    <header id="headerContainer">
+        <div id="headerText">WEATHER DASHBOARD
+            <i class="fa-regular fa-sun"></i>
+            <i class="fa-solid fa-temperature-full"></i>
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <i class="fa-solid fa-snowflake"></i>
+            <i class="fa-solid fa-wind"></i>
+        </div>
+    </header>
+    <aside>
+        <div id="searchContainer">
+            <div id="searchTitle">Search For a City
+                <input type="text" id="theSearch" name="city" placeholder="Los Angeles">
+                <button id="searchBtn">SEARCH</button>
+            </div>
+            <div id="historyContainer">
+            </div>
+        </div>
+    </aside>
+    <aside>
+        <div id="forecastContainer">
+            <div id="weatherCard">
+                <div id="weatherCardTitle">City + Date
+                    <img id="image" src="">
+                </div>
+                <div id="todayTemp" class="weatherCardText">Temp
+                </div>
+                <div id="todayWind" class="weatherCardText">Wind
+                </div>
+                <div id="todayHumidity" class="weatherCardText">Humidity
+                </div>
+            </div>
+        </div>
+    </aside>
+    <aside>
+        <div id="fiveDayContainer">
+            <div id="fiveDayText">
+                5-Day Forecast
+            </div>
+
+        </div>
+    </aside>
+    <aside>
+        <div id="futureContainer">
+            <div id="futureCardContainer">
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <div id="tomorrowCardTitle1" class="futureTitle">Date
+                        </div>
+                        <div id="tomorrowEmoji1" class="futureCardText">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <div id="tomorrowTemp1" class="futureCardText">Temp
+                        </div>
+                        <div id="tomorrowWind1" class="futureCardText">Wind
+                        </div>
+                        <div id="tomorrowHumidity1" class="futureCardText">Humidity
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <div class="card">
+                        <div id="tomorrowCardTitle2" class="futureTitle">Date
+                        </div>
+                        <div id="tomorrowEmoji2" class="futureCardText">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <div id="tomorrowTemp2" class="futureCardText">Temp
+                        </div>
+                        <div id="tomorrowWind2" class="futureCardText">Wind
+                        </div>
+                        <div id="tomorrowHumidity2" class="futureCardText">Humidity
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <div class="card">
+                        <div id="tomorrowCardTitle3" class="futureTitle">Date
+                        </div>
+                        <div id="tomorrowEmoji3" class="futureCardText">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <div id="tomorrowTemp3" class="futureCardText">Temp
+                        </div>
+                        <div id="tomorrowWind3" class="futureCardText">Wind
+                        </div>
+                        <div id="tomorrowHumidity3" class="futureCardText">Humidity
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                          <div id="tomorrowCardTitle4" class="futureTitle">Date
+                          </div>
+                          <div id="tomorrowEmoji4" class="futureCardText">
+                              <i class="fa-solid fa-wind"></i>
+                          </div>
+                          <div id="tomorrowTemp4" class="futureCardText">Temp
+                          </div>
+                          <div id="tomorrowWind4" class="futureCardText">Wind
+                          </div>
+                          <div id="tomorrowHumidity4" class="futureCardText">Humidity
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="card">
+                          <div id="tomorrowCardTitle5" class="futureTitle">Date
+                          </div>
+                          <div id="tomorrowEmoji5" class="futureCardText">
+                              <i class="fa-solid fa-wind"></i>
+                          </div>
+                          <div id="tomorrowTemp5" class="futureCardText">Temp
+                          </div>
+                          <div id="tomorrowWind5" class="futureCardText">Wind
+                          </div>
+                          <div id="tomorrowHumidity5" class="futureCardText">Humidity
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

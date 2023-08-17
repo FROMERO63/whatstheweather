@@ -1,0 +1,280 @@
+* {
+    font-family:'Inconsolata', monospace;
+}
+
+#headerContainer{
+    background-color: rgb(77, 111, 223);
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+#headerText{
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+}
+
+#searchTitle {
+    background-color: rgb(151, 153, 157);
+    height: fit-content;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+}
+   
+
+#searchContainer {
+    background-color: rgb(195, 196, 198);
+    width: 30%;
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+}
+
+#theSearch {
+    max-width: 80%;
+    height: 30px;
+    align-self: center;
+    display: block;
+    margin: 5px auto;
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#historyContainer {
+    margin: 5px;
+}
+
+.historyButton {
+    background-color: rgb(151, 153, 157);
+    margin: 15px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+}
+
+#searchBtn {
+    margin: 5px;
+    font-size: 20px;
+    background-color:  rgb(117, 143, 228);
+    border: none;
+    width: 110px;
+    height: 35px;
+    border-radius: 15%;
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+}
+
+#forecastContainer {
+    background-color: rgb(195, 196, 198);
+    width: 64%;
+    float: right;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+    height: fit-content;
+    font-size: 40px;
+    text-align: left;
+}
+
+#weatherCard {
+    background-color: rgb(151, 153, 157);
+    padding-top: 15px;
+    padding-left: 15px;
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+}
+
+.weatherCardText {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
+}
+
+#fiveDayContainer {
+    width: 64%;
+    float: right;
+    padding: 10px;
+    margin: 5px;
+    height: fit-content;
+    text-align: left;
+}
+
+#fiveDayText {
+    text-align: center;
+}
+
+#futureContainer {
+    background-color: rgb(195, 196, 198);
+    width: 64%;
+    float: right;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+    height: fit-content;
+    font-size: 20px;
+    text-align: left;
+}
+
+#weatherCard {
+    background-color: rgb(151, 153, 157);
+    padding-top: 15px;
+    padding-left: 15px;
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+}
+
+#row {
+    display: block;
+}
+
+#futureCardContainer {
+    display: flex;
+    margin: 5px;
+}
+
+.futureTitle {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.futureCardText {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.column {
+    float: left;
+    width: 155px;
+    padding: 0 6px;
+  }
+
+  .card {
+    box-shadow: 7px 7px 5px rgb(119, 127, 130);
+    padding: 16px;
+    text-align: left;
+    background-color: #f1f1f1;
+    font-size: 20px;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    #headerContainer{
+        height: 60px;
+        margin-bottom: 5px;
+    }
+    
+    #headerText{
+        padding: 10px;
+        font-size: 35px;
+    }
+    #searchTitle {
+        height: fit-content;
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+    }       
+    
+    #searchContainer {
+        width: 33%;
+        padding: 7px;
+        margin: 5px;
+    }
+
+    #theSearch {
+        max-width: 80%;
+        height: 25px;
+        width: 70%;
+        font-size: 15px;
+    }
+
+    #searchBtn {
+        margin: 5px;
+        font-size: 17px;
+        width: 90px;
+        height: 28px;
+    }
+
+    .historyButton {
+        margin: 15px;
+        height: 30px;
+        font-size: 22px;
+    }
+
+    #forecastContainer {
+        width: 57%;
+        padding: 8px;
+        margin: 5px;
+        font-size: 30px;
+        padding: 8px;
+    }
+    
+    .weatherCardText {
+        font-size: 22px;
+        padding-top: 10px;
+        padding-bottom: 7px;
+        padding-left: 7px;
+        
+    }
+
+    #fiveDayContainer {
+        width: 57%;
+        padding: 8px;
+        margin: 5px;
+    }
+
+    #futureContainer {
+        width: 57%;
+        padding: 8px;
+        font-size: 15px;
+    }
+    
+    #weatherCard {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .column {
+        float: left;
+        width: 70px;
+        padding: 0 5.6px;
+      }
+
+    .card {
+        padding: 10px;
+        font-size: 8px;
+      }
+    }
+  
+  @media screen and (max-width: 600px) {
+    #headerContainer{
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    
+    #headerText{
+        padding: 7px;
+        font-size: 20px;
+    }
+
+    .historyButton {
+        margin: 15px;
+        height: 25px;
+        font-size: 18px;
+    }
+
+    .column {
+        float: left;
+        width: 180px;
+        padding: 10px;
+      }
+
+    .card {
+        padding: 10px;
+        font-size: 8px;
+      }
+  }
